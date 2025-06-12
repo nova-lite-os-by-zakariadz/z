@@ -1,39 +1,451 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="7257054fbd2f3b8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="NOVA LITE OS - Lightweight Operating System by ZakariaDZ">
-<meta name="keywords" content="NOVA LITE OS, Lite OS, zakaria os, system for old pc, windows lite, fast os, NOVA OS download">
-<meta name="author" content="ZakariaDZ">
-<title>NOVA LITE OS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7257054fbd2f3b8" />
+<meta name="description" content="NOVA LITE OS">
+<meta name="keywords" content="Server Rules">
+<meta name="author" content="ZAKARIA0_aDZ">
+    <title>NOVA LITE OS - Discord Server Rules</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    body {
-      background-color: #101820;
-      color: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #00ffcc;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #cccccc;
-    }
-  </style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .server-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .server-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .server-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .server-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .discord-btn {
+            display: inline-block;
+            background: #5865f2;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+        }
+
+        .discord-btn:hover {
+            background: #4752c4;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(88, 101, 242, 0.6);
+        }
+
+        .rules-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffd700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .rule-item {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #4ecdc4;
+            transition: all 0.3s ease;
+        }
+
+        .rule-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .rule-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .rule-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .rule-translations {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .rule-translations div {
+            margin: 3px 0;
+        }
+
+        .warning-section {
+            background: linear-gradient(45deg, #ff4757, #ff3742);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(255, 71, 87, 0.3);
+        }
+
+        .warning-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .lang-tab {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .lang-tab:hover, .lang-tab.active {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .server-title {
+                font-size: 2rem;
+            }
+
+            .rule-item {
+                padding: 15px;
+            }
+
+            .language-tabs {
+                gap: 5px;
+            }
+
+            .lang-tab {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .floating-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+    </style>
 </head>
 <body>
-  <h1>مرحبًا بك في NOVA LITE OS</h1>
-  <p>نظام تشغيل خفيف وسريع لأجهزتك الضعيفة</p>
+    <div class="floating-particles" id="particles"></div>
+    
+    <div class="container">
+        <div class="header">
+            <img src="https://github.com/nova-lite-os/NOVA-LITE-OS/blob/main/Icon.png?raw=true" alt="NOVA LITE OS" class="server-icon">
+            <h1 class="server-title">🌌 NOVA LITE OS</h1>
+            <p class="server-subtitle">📌 Welcome to our Discord Server - Please read and follow the rules</p>
+            <a href="https://discord.gg/5KaTjMhRSG" class="discord-btn" target="_blank">
+                🚀 Join Our Discord Server
+            </a>
+        </div>
+
+        <div class="rules-section">
+            <h2 class="section-title">📜 Server Rules</h2>
+            
+            <div class="rule-item">
+                <div class="rule-number">1️⃣</div>
+                <div class="rule-text">❌ السب، العنصرية، التمييز أو الإهانة ممنوعة تمامًا.</div>
+                <div class="rule-translations">
+                    <div>🚫 No insults, racism or discrimination.</div>
+                    <div>🚫 Pas d'insultes ou de discrimination.</div>
+                    <div>🚫 Niente insulti o razzismo.</div>
+                    <div>🚫 No insultos ni discriminación.</div>
+                    <div>🚫 Keine Beleidigungen oder Diskriminierung.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">2️⃣</div>
+                <div class="rule-text">📛 ممنوع إرسال روابط سبام أو إعلانات بدون إذن.</div>
+                <div class="rule-translations">
+                    <div>📛 No spam or advertising without permission.</div>
+                    <div>📛 Pas de spam ou publicité sans autorisation.</div>
+                    <div>📛 No spam o pubblicità non autorizzata.</div>
+                    <div>📛 Sin spam o anuncios sin permiso.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">3️⃣</div>
+                <div class="rule-text">👮‍♂️ احترام جميع الأعضاء والإدارة إجباري.</div>
+                <div class="rule-translations">
+                    <div>👮‍♂️ Respect all users and staff.</div>
+                    <div>👮‍♂️ Respectez tous les membres.</div>
+                    <div>👮‍♂️ Rispetta tutti.</div>
+                    <div>👮‍♂️ Respeta a todos.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">4️⃣</div>
+                <div class="rule-text">🚫 لا نقاشات دينية أو سياسية.</div>
+                <div class="rule-translations">
+                    <div>🚫 No religious/political debates.</div>
+                    <div>🚫 Pas de discussions religieuses/politiques.</div>
+                    <div>🚫 Nessuna politica o religione.</div>
+                    <div>🚫 No política ni religión.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">5️⃣</div>
+                <div class="rule-text">🧼 حافظ على نظافة وتنظيم القنوات.</div>
+                <div class="rule-translations">
+                    <div>🧼 Keep channels clean and organized.</div>
+                    <div>🧼 Gardez les salons propres.</div>
+                    <div>🧼 Mantieni ordine.</div>
+                    <div>🧼 Mantén el orden.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">6️⃣</div>
+                <div class="rule-text">🐞 بلغ عن أي مخالفة @Staff</div>
+                <div class="rule-translations">
+                    <div>🐞 Report violations to @Staff</div>
+                    <div>🐞 Signalez les infractions</div>
+                    <div>🐞 Segnala violazioni</div>
+                    <div>🐞 Reporta infracciones</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">7️⃣</div>
+                <div class="rule-text">🛑 يُمنع الحديث عن الأنظمة المعدلة أو نشرها.</div>
+                <div class="rule-translations">
+                    <div>🛑 No modded OS discussions or sharing.</div>
+                    <div>🛑 Pas de systèmes modifiés.</div>
+                    <div>🛑 No OS modificati.</div>
+                    <div>🛑 No sistemas modificados.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">8️⃣</div>
+                <div class="rule-text">🔞 ممنوع أي محتوى غير لائق أو إباحي.</div>
+                <div class="rule-translations">
+                    <div>🔞 NSFW/offensive content is forbidden.</div>
+                    <div>🔞 Pas de contenu NSFW.</div>
+                    <div>🔞 Contenuto NSFW vietato.</div>
+                    <div>🔞 No contenido NSFW.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">9️⃣</div>
+                <div class="rule-text">🕵️ ممنوع إنشاء حسابات وهمية أو ازدواجية.</div>
+                <div class="rule-translations">
+                    <div>🕵️ No fake or alt accounts.</div>
+                    <div>🕵️ Pas de comptes alternatifs.</div>
+                    <div>🕵️ No account falsi.</div>
+                    <div>🕵️ No cuentas falsas.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">🔟</div>
+                <div class="rule-text">🗂 استخدم القنوات حسب الغرض المحدد لها فقط.</div>
+                <div class="rule-translations">
+                    <div>🗂 Use channels for their intended purpose.</div>
+                    <div>🗂 Utilisez les salons correctement.</div>
+                    <div>🗂 Usa i canali per il loro scopo.</div>
+                    <div>🗂 Usa los canales correctamente.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rules-section">
+            <h2 class="section-title">⚠️ Additional Guidelines</h2>
+            
+            <div class="rule-item">
+                <div class="rule-text">🔢 ممنوع تخريب النظام أو نشر أدوات ضارة.</div>
+                <div class="rule-translations">
+                    <div>❌ No system sabotage or malicious tools.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-text">📥 لا تطلب ملفات خاصة من الأعضاء.</div>
+                <div class="rule-translations">
+                    <div>📥 Don't request private files from users.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-text">📌 لا تزعج أحد بالـ DM بدون إذنه.</div>
+                <div class="rule-translations">
+                    <div>📌 No unsolicited DMs.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-text">🎤 يمنع الإساءة الصوتية أو استخدام الموسيقى المزعجة.</div>
+                <div class="rule-translations">
+                    <div>🎤 No mic spamming or loud music.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-text">📣 لا تروّج لقنوات أو سيرفرات أخرى بدون إذن.</div>
+                <div class="rule-translations">
+                    <div>📣 Don't promote other servers without approval.</div>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-text">📖 احترم اختلاف الرأي وناقش بأدب.</div>
+                <div class="rule-translations">
+                    <div>📖 Respect opinions and debate politely.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning-section">
+            <div class="warning-title">⚠️ Warning</div>
+            <p>مخالفة أي قانون قد تؤدي إلى تحذير، كتم، طرد أو بان نهائي حسب شدة المخالفة.</p>
+            <p>Any rule violation can result in warning, mute, kick or ban depending on severity.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 20px;">
+            <a href="https://discord.gg/5KaTjMhRSG" class="discord-btn" target="_blank">
+                💬 Join NOVA LITE OS Community
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 20;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 10 + 5 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles when page loads
+        document.addEventListener('DOMContentLoaded', createParticles);
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
